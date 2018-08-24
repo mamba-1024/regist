@@ -1,0 +1,148 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "rules": {
+        "no-unused-vars": ["warn", { "vars": "local", "args": "after-used", "ignoreRestSiblings": false }],
+        "block-spacing": "error",
+        "comma-spacing": ["error", { "before": false, "after": true }],
+        "react/display-name": 1,
+        "react/prop-types": 1,
+        "no-debugger": 0,
+        "semi": [
+            2,
+            "always"
+        ],
+        "semi-spacing": 0,
+        "no-console": 0,
+        "comma-dangle": [
+            2,
+            "always-multiline"
+        ],
+        "react/jsx-first-prop-new-line": 0,
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "never",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "no-unused-expressions": [
+            0,
+            {
+                "allowShortCircuit": true,
+                "allowTernary": true
+            }
+        ],
+        "prefer-const": [0, {
+            "destructuring": "all",
+            "ignoreReadBeforeAssign": false
+        }],
+        "no-param-reassign": 0,
+        "no-eval": [
+            "error",
+            {
+                "allowIndirect": true
+            }
+        ],
+        "react/jsx-no-bind": 0,
+        "valid-jsdoc": 1,
+        "block-scoped-var": 0,
+        "default-case": 2,
+        "no-magic-numbers": [
+            "error",
+            {
+                "ignoreArrayIndexes": true,
+                "ignore": [
+                    -1, 0, 1, 2, 10, 100
+                ]
+            }
+        ],
+        "no-self-compare": 2,
+        "no-unmodified-loop-condition": 2,
+        "no-catch-shadow": 0,
+        "no-label-var": 2,
+        "no-use-before-define": 0,
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        "eol-last": 2,
+        "indent": [
+            2,
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "max-nested-callbacks": [
+            1,
+            5
+        ],
+        "jsx-quotes": 0,
+        "newline-before-return": 0,
+        "no-lonely-if": 0,
+        "no-multiple-empty-lines": [
+            2,
+            {
+                "max": 2
+            }
+        ],
+        "no-nested-ternary": 0,
+        "no-spaced-func": 2,
+        "no-trailing-spaces": 2,
+        "object-curly-newline": 0,
+        "object-curly-spacing": 0,
+        "require-jsdoc": 0,
+        "space-infix-ops": 2,
+        "keyword-spacing": "error",
+        "space-before-blocks": ["error", { "functions": "always", "keywords": "always", "classes": "always" }],
+        "spaced-comment": [
+            2,
+            "always",
+            {
+                "markers": [
+                    "global",
+                    "globals",
+                    "eslint",
+                    "eslint-disable",
+                    "*package",
+                    "!"
+                ]
+            }
+        ],
+        "arrow-body-style": 2,
+        "arrow-parens": 2,
+        "arrow-spacing": [
+            2,
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "no-var": 0
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 8,
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true,
+            "globalReturn": true,
+            "impliedStrict": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": true,
+        "amd": true,
+        "es6": true
+    }
+}
