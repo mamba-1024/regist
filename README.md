@@ -24,3 +24,4 @@
 ```
     npm run build
 ```
+build之后直接把build文件夹放到相应的webserver服务器，然后访问其中的index.html
